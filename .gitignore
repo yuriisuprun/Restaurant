@@ -1,0 +1,30 @@
+# IntelliJ IDEA
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Java build artifacts
+*.class
+hs_err_pid*
+replay_pid*
+
+# Common build output directories
+out/
+target/
+build/
+.gradle/
+
+# Logs
+*.log
+
+# OS / tooling noise
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Local env files (keep an explicit example file if you add one)
+.env
+.env.*
+!.env.example
