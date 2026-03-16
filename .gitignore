@@ -14,6 +14,9 @@ out/
 target/
 build/
 .gradle/
+node_modules/
+dist/
+.vite/
 
 # Logs
 *.log
