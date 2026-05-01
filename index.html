@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ocean Table - Ristorante di Pesce Premium</title>
+    <meta name="description" content="Pesce fresco, preparato con maestria. Vivi la migliore esperienza culinaria mediterranea con ingredienti di provenienza sostenibile presso Ocean Table.">
+    <meta name="keywords" content="ristorante di pesce, pesce fresco, cucina mediterranea, alta cucina, pesce sostenibile, ocean table">
+    <meta name="author" content="Ocean Table Restaurant">
+    
+    <!-- Favicon and App Icons -->
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon.svg">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon.svg">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.svg">
+    <link rel="mask-icon" href="assets/images/favicon.svg" color="#1e3a8a">
+    
+    <!-- Web App Manifest -->
+    <link rel="manifest" href="manifest.json">
+    
+    <!-- Theme Colors -->
+    <meta name="theme-color" content="#1e3a8a">
+    <meta name="msapplication-TileColor" content="#1e3a8a">
+    <meta name="msapplication-config" content="browserconfig.xml">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://oceantable.com/">
+    <meta property="og:title" content="Ocean Table - Ristorante di Pesce Premium">
+    <meta property="og:description" content="Pesce fresco, preparato con maestria. Vivi la migliore esperienza culinaria mediterranea con ingredienti di provenienza sostenibile.">
+    <meta property="og:image" content="assets/images/manifest-icon-512.svg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://oceantable.com/">
+    <meta property="twitter:title" content="Ocean Table - Ristorante di Pesce Premium">
+    <meta property="twitter:description" content="Pesce fresco, preparato con maestria. Vivi la migliore esperienza culinaria mediterranea con ingredienti di provenienza sostenibile.">
+    <meta property="twitter:image" content="assets/images/manifest-icon-512.svg">
+    
+    <!-- Language alternatives -->
+    <link rel="alternate" hreflang="it" href="index.html">
+    <link rel="alternate" hreflang="en" href="en/index.html">
+    <link rel="alternate" hreflang="x-default" href="index.html">
+    
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header / Navbar -->
+    <header class="header" id="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <!-- Logo -->
+                <div class="nav-logo">
+                    <div class="logo-circle">
+                        <i class="fas fa-fish"></i>
+                    </div>
+                </div>
+
+                <!-- Navigation Menu -->
+                <ul class="nav-menu" id="nav-menu">
+                    <li class="nav-item">
+                        <a href="#our-fish" class="nav-link" data-translate="nav.ourFish">Il Nostro Pesce</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="pages/menu.html" class="nav-link" data-translate="nav.menu">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#locations" class="nav-link" data-translate="nav.locations">Le Nostre Sedi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="pages/careers.html" class="nav-link" data-translate="nav.workWithUs">Lavora Con Noi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="pages/gift-card.html" class="nav-link" data-translate="nav.giftCard">Carta Regalo</a>
+                    </li>
+                </ul>
+
+                <!-- Right Side -->
+                <div class="nav-right">
+                    <div class="language-switch">IT</div>
+                    <div class="social-icons">
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                    </div>
+                    <button class="btn btn-outline" data-translate="nav.bookNow">Prenota Ora</button>
+                    <button class="btn btn-primary" data-translate="nav.delivery">Consegna</button>
+                </div>
+
+                <!-- Mobile Menu Toggle -->
+                <div class="hamburger" id="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-background">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-logo">
+                <div class="logo-circle large">
+                    <i class="fas fa-fish"></i>
+                </div>
+            </div>
+            <h1 class="hero-title" data-translate="hero.title">Dal Mercato alla Cucina</h1>
+            <p class="hero-subtitle" data-translate="hero.subtitle">Pesce fresco, preparato con maestria, di provenienza sostenibile</p>
+        </div>
+    </section>
+
+    <!-- About / Concept Section -->
+    <section class="about" id="our-fish">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title" data-translate="about.title">La Nostra Filosofia</h2>
+                    <p class="about-description" data-translate="about.description1">
+                        Al Tavolo dell'Oceano, crediamo nell'essenza pura del mare. Il nostro impegno per la freschezza inizia all'alba, 
+                        quando selezioniamo il miglior pescato dai pescatori locali e fornitori di fiducia. Ogni piatto racconta una storia 
+                        di approvvigionamento sostenibile, tecniche tradizionali e arte culinaria moderna.
+                    </p>
+                    <p class="about-description" data-translate="about.description2">
+                        Dalle acque azzurre del Mediterraneo alla vostra tavola, onoriamo i doni dell'oceano con rispetto, 
+                        creatività e una dedizione incrollabile alla qualità che potete assaporare in ogni boccone.
+                    </p>
+                    </p>
+                </div>
+                <div class="about-image">
+                    <img src="assets/images/placeholder-seafood.svg" alt="Esposizione di pesce fresco - Prossimamente" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Preview Section -->
+    <section class="menu-preview" id="menu">
+        <div class="container">
+            <h2 class="section-title centered">Piatti Signature</h2>
+            <div class="menu-grid">
+                <div class="menu-card">
+                    <div class="menu-image">
+                        <img src="assets/images/placeholder-menu-dish.svg" alt="Branzino Mediterraneo - Prossimamente" />
+                    </div>
+                    <div class="menu-content">
+                        <h3 class="menu-title">Branzino Mediterraneo</h3>
+                        <p class="menu-description">Grigliato alla perfezione con erbe aromatiche, limone e olio d'oliva</p>
+                    </div>
+                </div>
+                <div class="menu-card">
+                    <div class="menu-image">
+                        <img src="assets/images/placeholder-menu-dish.svg" alt="Piatto dell'Oceano - Prossimamente" />
+                    </div>
+                    <div class="menu-content">
+                        <h3 class="menu-title">Piatto dell'Oceano</h3>
+                        <p class="menu-description">Una selezione del miglior pescato del giorno, servito in stile familiare</p>
+                    </div>
+                </div>
+                <div class="menu-card">
+                    <div class="menu-image">
+                        <img src="assets/images/placeholder-menu-dish.svg" alt="Aragosta Atlantica - Prossimamente" />
+                    </div>
+                    <div class="menu-content">
+                        <h3 class="menu-title">Aragosta Atlantica</h3>
+                        <p class="menu-description">Cotta nel burro con verdure di stagione e zafferano</p>
+                    </div>
+                </div>
+                <div class="menu-card">
+                    <div class="menu-image">
+                        <img src="assets/images/placeholder-menu-dish.svg" alt="Ostriche Fresche - Prossimamente" />
+                    </div>
+                    <div class="menu-content">
+                        <h3 class="menu-title">Ostriche Fresche</h3>
+                        <p class="menu-description">Selezione giornaliera dalle acque costiere, servite su ghiaccio</p>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-cta">
+                <a href="pages/menu.html" class="btn btn-primary">Vedi Menu Completo</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Locations Section -->
+    <section class="locations" id="locations">
+        <div class="container">
+            <h2 class="section-title centered">Le Nostre Sedi</h2>
+            <div class="locations-grid">
+                <div class="location-card">
+                    <div class="location-image">
+                        <img src="assets/images/placeholder-location.svg" alt="Ristorante Quartiere Portuale - Prossimamente" />
+                    </div>
+                    <div class="location-content">
+                        <h3 class="location-name">Quartiere Portuale</h3>
+                        <p class="location-address">Via del Porto 123<br>Città Costiera, CC 12345</p>
+                        <button class="btn btn-outline">Vedi Dettagli</button>
+                    </div>
+                </div>
+                <div class="location-card">
+                    <div class="location-image">
+                        <img src="assets/images/placeholder-location.svg" alt="Ristorante Marina Bay - Prossimamente" />
+                    </div>
+                    <div class="location-content">
+                        <h3 class="location-name">Marina Bay</h3>
+                        <p class="location-address">Lungomare Marinai 456<br>Porto Nuovo, PN 67890</p>
+                        <button class="btn btn-outline">Vedi Dettagli</button>
+                    </div>
+                </div>
+                <div class="location-card">
+                    <div class="location-image">
+                        <img src="assets/images/placeholder-location.svg" alt="Ristorante Centro - Prossimamente" />
+                    </div>
+                    <div class="location-content">
+                        <h3 class="location-name">Centro</h3>
+                        <p class="location-address">Via dell'Oceano 789<br>Città Metropolitana, CM 13579</p>
+                        <button class="btn btn-outline">Vedi Dettagli</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="experience">
+        <div class="container">
+            <div class="experience-content">
+                <h2 class="section-title centered">L'Esperienza Ocean Table</h2>
+                <div class="experience-features">
+                    <div class="feature">
+                        <div class="feature-icon">
+                            <i class="fas fa-anchor"></i>
+                        </div>
+                        <h3 class="feature-title">Provenienza Sostenibile</h3>
+                        <p class="feature-description">Collaboriamo con pescatori responsabili e fornitori che condividono il nostro impegno per la conservazione degli oceani.</p>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <h3 class="feature-title">Fresco Ogni Giorno</h3>
+                        <p class="feature-description">Il nostro menu cambia con le maree, presentando il pescato più fresco consegnato quotidianamente nelle nostre cucine.</p>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">
+                            <i class="fas fa-award"></i>
+                        </div>
+                        <h3 class="feature-title">Preparazione Esperta</h3>
+                        <p class="feature-description">I nostri chef combinano tecniche tradizionali con innovazione moderna per onorare i sapori naturali di ogni ingrediente.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Prenota il Tuo Tavolo Oggi</h2>
+                <p class="cta-description">Vivi la migliore esperienza culinaria di pesce in un'atmosfera di eleganza costiera</p>
+                <button class="btn btn-primary large">Prenota Ora</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work With Us Section -->
+    <section class="work-with-us" id="work-with-us">
+        <div class="container">
+            <div class="work-content">
+                <div class="work-text">
+                    <h2 class="section-title">Unisciti al Nostro Team</h2>
+                    <p class="work-description">
+                        Diventa parte di un team appassionato dedicato all'eccellenza culinaria. Cerchiamo sempre 
+                        persone di talento che condividano il nostro amore per il pesce fresco e l'ospitalità eccezionale.
+                    </p>
+                    <button class="btn btn-primary">Vedi Opportunità</button>
+                </div>
+                <div class="work-image">
+                    <img src="assets/images/placeholder-team.svg" alt="Team del ristorante - Prossimamente" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <div class="logo-circle">
+                            <i class="fas fa-fish"></i>
+                        </div>
+                        <span class="footer-brand">Ocean Table</span>
+                    </div>
+                    <p class="footer-tagline">Pesce fresco, preparato con maestria</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">Navigazione</h4>
+                    <ul class="footer-links">
+                        <li><a href="#il-nostro-pesce">Il Nostro Pesce</a></li>
+                        <li><a href="pages/menu.html">Menu</a></li>
+                        <li><a href="#locations">Le Nostre Sedi</a></li>
+                        <li><a href="pages/careers.html">Carriere</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">Contatti</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-phone"></i> +39 055 123 4567</p>
+                        <p><i class="fas fa-envelope"></i> info@oceantable.it</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Via del Porto 123</p>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">Seguici</h4>
+                    <div class="footer-social">
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Ocean Table. Tutti i diritti riservati.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
