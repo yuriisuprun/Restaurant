@@ -1,0 +1,348 @@
+# ==============================================
+# Ocean Table Restaurant Website - .gitignore
+# ==============================================
+
+# Operating System Files
+# ==============================================
+
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msm
+*.msp
+*.lnk
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# Editor and IDE Files
+# ==============================================
+
+# Visual Studio Code
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# JetBrains IDEs (WebStorm, PhpStorm, etc.)
+.idea/
+*.swp
+*.swo
+*~
+
+# Sublime Text
+*.tmlanguage.cache
+*.tmPreferences.cache
+*.stTheme.cache
+*.sublime-workspace
+*.sublime-project
+
+# Vim
+*.swp
+*.swo
+*.tmp
+*.bak
+Session.vim
+.netrwhist
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+
+# Atom
+.atom/
+
+# Development Tools & Dependencies
+# ==============================================
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.npm
+.yarn-integrity
+.pnp
+.pnp.js
+
+# Package managers
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Build outputs
+dist/
+build/
+out/
+.next/
+.nuxt/
+.cache/
+.parcel-cache/
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Logs
+# ==============================================
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage directory used by tools like istanbul
+coverage/
+*.lcov
+.nyc_output
+
+# Web Development Specific
+# ==============================================
+
+# Sass
+.sass-cache/
+*.css.map
+*.sass.map
+*.scss.map
+
+# Less
+*.less.map
+
+# Stylus
+*.styl.map
+
+# PostCSS
+*.pcss.map
+
+# Webpack
+.webpack/
+
+# Rollup
+.rollup.cache/
+
+# Parcel
+.parcel-cache/
+
+# Vite
+.vite/
+
+# Server and Deployment
+# ==============================================
+
+# Local development servers
+.serve/
+serve.json
+
+# Deployment files
+.vercel
+.netlify/
+.firebase/
+firebase-debug.log
+.firebaserc
+
+# Docker
+Dockerfile.local
+docker-compose.override.yml
+.dockerignore
+
+# Temporary and Cache Files
+# ==============================================
+
+# Temporary files
+*.tmp
+*.temp
+temp/
+tmp/
+
+# Cache directories
+.cache/
+.temp/
+.tmp/
+
+# Browser cache
+.eslintcache
+.stylelintcache
+
+# Testing
+# ==============================================
+
+# Jest
+coverage/
+.jest/
+
+# Cypress
+cypress/videos/
+cypress/screenshots/
+
+# Playwright
+test-results/
+playwright-report/
+playwright/.cache/
+
+# Security and Sensitive Files
+# ==============================================
+
+# API keys and secrets
+.env
+.env.local
+.env.*.local
+config/secrets.json
+secrets/
+*.pem
+*.key
+*.crt
+*.p12
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+
+# Backup files
+*.backup
+*.bak
+*.old
+
+# Project Specific
+# ==============================================
+
+# Design files (if added later)
+*.psd
+*.ai
+*.sketch
+*.fig
+*.xd
+
+# Documentation drafts
+docs/drafts/
+*.draft.md
+
+# Asset optimization
+assets/raw/
+assets/unoptimized/
+
+# Analytics and tracking
+analytics/
+tracking/
+
+# A/B testing
+experiments/
+
+# Content Management
+# ==============================================
+
+# CMS uploads (if integrated later)
+uploads/
+media/uploads/
+content/uploads/
+
+# Generated content
+generated/
+auto-generated/
+
+# Miscellaneous
+# ==============================================
+
+# Archive files
+*.zip
+*.tar.gz
+*.rar
+*.7z
+
+# Office documents (temporary)
+~$*
+
+# System files
+*.swp
+*.swo
+*~
+
+# Runtime files
+*.pid
+*.seed
+*.pid.lock
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Optional stylelint cache
+.stylelintcache
+
+# Microbundle cache
+.rpt2_cache/
+.rts2_cache_cjs/
+.rts2_cache_es/
+.rts2_cache_umd/
+
+# Optional REPL history
+.node_repl_history
+
+# Output of 'npm pack'
+*.tgz
+
+# Yarn Integrity file
+.yarn-integrity
+
+# ==============================================
+# Keep these files (use ! to negate ignore)
+# ==============================================
+
+# Keep important config files
+!.gitignore
+!README.md
+!package.json
+!.editorconfig
+!.prettierrc
+!.eslintrc*
+
+# Keep essential assets
+!assets/css/
+!assets/js/
+!assets/images/
+!assets/fonts/
+
+# Keep all HTML files
+!*.html
+
+# Keep documentation
+!docs/README.md
+!docs/*.md
