@@ -14,42 +14,134 @@ document.addEventListener('DOMContentLoaded', function() {
     }, 100);
 });
 
+/** Basename like `menu.html` from resolved href; null for in-page anchors. */
+function resolveNavLinkHrefBasename(link) {
+    const raw = link.getAttribute('href');
+    if (!raw || raw.startsWith('#')) return null;
+    try {
+        const u = new URL(raw, window.location.href);
+        const parts = u.pathname.replace(/\\/g, '/').split('/').filter(Boolean);
+        const file = parts.length ? parts[parts.length - 1].toLowerCase() : '';
+        return file || null;
+    } catch (_) {
+        return null;
+    }
+}
+
+function getNavPageScope() {
+    const path = (window.location.pathname || '').replace(/\\/g, '/');
+    const parts = path.split('/').filter(Boolean);
+    const file = parts.length ? parts[parts.length - 1].toLowerCase() : '';
+
+    if (file === 'menu.html') return 'menu';
+    if (file === 'careers.html') return 'careers';
+
+    /* Root deployments and `/index.html` */
+    return 'home';
+}
+
+function clearHeaderNav(navLinks) {
+    navLinks.forEach((link) => {
+        link.classList.remove('active');
+        link.removeAttribute('aria-current');
+    });
+}
+
+/** Adds .active; sets aria-current=\"page\" only when the link corresponds to the loaded document. */
+function markNav(link, opts) {
+    const asCurrentPage = opts && opts.asCurrentPage === true;
+    link.classList.add('active');
+    if (asCurrentPage) {
+        link.setAttribute('aria-current', 'page');
+    }
+}
+
+function applyRouteBasedNav(navLinks, scope) {
+    clearHeaderNav(navLinks);
+
+    navLinks.forEach((link) => {
+        const basename = resolveNavLinkHrefBasename(link);
+        if (!basename) return;
+        if (scope === 'menu' && basename === 'menu.html') {
+            markNav(link, { asCurrentPage: true });
+        }
+        if (scope === 'careers' && basename === 'careers.html') {
+            markNav(link, { asCurrentPage: true });
+        }
+    });
+}
+
+/** Homepage only: underline current section anchor; `#menu` section highlights Menu link */
+function applyHomeNavScrollSpy(navLinks, sections) {
+    clearHeaderNav(navLinks);
+
+    let sectionIdInView = '';
+    sections.forEach((section) => {
+        const id = section.getAttribute('id') || '';
+        if (!id) return;
+        if (window.scrollY >= section.offsetTop - 200) {
+            sectionIdInView = id;
+        }
+    });
+
+    navLinks.forEach((link) => {
+        const href = link.getAttribute('href') || '';
+
+        if (href.startsWith('#')) {
+            if (href === '#' + sectionIdInView) {
+                markNav(link, { asCurrentPage: false });
+            }
+            return;
+        }
+
+        const basename = resolveNavLinkHrefBasename(link);
+        if (sectionIdInView === 'menu' && basename === 'menu.html') {
+            markNav(link, { asCurrentPage: false });
+        }
+        if (sectionIdInView === 'work-with-us' && basename === 'careers.html') {
+            markNav(link, { asCurrentPage: false });
+        }
+    });
+}
+
+function syncNavbarHighlight() {
+    const navLinks = document.querySelectorAll('#header .nav-link');
+    const scope = getNavPageScope();
+
+    if (scope === 'menu' || scope === 'careers') {
+        applyRouteBasedNav(navLinks, scope);
+        return;
+    }
+
+    applyHomeNavScrollSpy(navLinks, [...document.querySelectorAll('section[id]')]);
+}
+
 // Navbar functionality
 function initNavbar() {
     const header = document.getElementById('header');
-    const navbar = document.querySelector('.navbar');
-    
-    // Handle scroll effects
-    window.addEventListener('scroll', function() {
-        if (window.scrollY > 100) {
-            header.classList.add('scrolled');
-        } else {
-            header.classList.remove('scrolled');
-        }
+
+    syncNavbarHighlight();
+
+    window.addEventListener('scroll', function navbarOnScroll() {
+        if (!header) return;
+        header.classList.toggle('scrolled', window.scrollY > 100);
+
+        if (getNavPageScope() !== 'home') return;
+        applyHomeNavScrollSpy(
+            document.querySelectorAll('#header .nav-link'),
+            [...document.querySelectorAll('section[id]')]
+        );
     });
-    
-    // Active link highlighting
-    const navLinks = document.querySelectorAll('.nav-link');
-    const sections = document.querySelectorAll('section[id]');
-    
-    window.addEventListener('scroll', function() {
-        let current = '';
-        
-        sections.forEach(section => {
-            const sectionTop = section.offsetTop;
-            const sectionHeight = section.clientHeight;
-            
-            if (window.scrollY >= (sectionTop - 200)) {
-                current = section.getAttribute('id');
-            }
-        });
-        
-        navLinks.forEach(link => {
-            link.classList.remove('active');
-            if (link.getAttribute('href') === `#${current}`) {
-                link.classList.add('active');
-            }
-        });
+
+    window.addEventListener('load', syncNavbarHighlight);
+    window.addEventListener('hashchange', syncNavbarHighlight);
+
+    window.addEventListener('resize', function navbarOnResize() {
+        if (getNavPageScope() !== 'home') return;
+        applyHomeNavScrollSpy(
+            document.querySelectorAll('#header .nav-link'),
+            [...document.querySelectorAll('section[id]')]
+        );
     });
 }
 

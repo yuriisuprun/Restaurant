@@ -175,6 +175,26 @@ body {
     width: 100%;
 }
 
+/* Current nav item — page route or homepage section spy */
+.nav-link.active {
+    color: var(--primary-blue);
+    font-weight: 600;
+}
+
+.nav-link.active::after {
+    width: 100%;
+}
+
+.nav-link:focus:not(:focus-visible) {
+    outline: none;
+}
+
+.nav-link:focus-visible {
+    outline: 2px solid var(--light-blue);
+    outline-offset: 4px;
+    border-radius: 2px;
+}
+
 .nav-right {
     display: flex;
     align-items: center;
@@ -916,7 +936,6 @@ body {
 
 /* Focus styles for accessibility */
 .btn:focus,
-.nav-link:focus,
 .social-link:focus {
     outline: 2px solid var(--light-blue);
     outline-offset: 2px;
