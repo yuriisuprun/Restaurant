@@ -31,6 +31,36 @@ const translations = {
         'menu.oysters': 'Ostriche Fresche',
         'menu.oystersDesc': 'Selezione giornaliera dalle acque costiere, servite su ghiaccio',
         'menu.viewFull': 'Visualizza Menu Completo',
+
+        // Menu Page
+        'menuPage.metaDescription': 'Scopri il nostro menu: pescato fresco, specialità mediterranee e ingredienti di provenienza sostenibile.',
+        'menuPage.heroTitle': 'Il Nostro Menu',
+        'menuPage.heroSubtitle': 'Pescato fresco e specialità di stagione, preparati con passione',
+        'menuPage.category.crudo': 'Crudo Bar',
+        'menuPage.category.antipasti': 'Antipasti',
+        'menuPage.category.secondi': 'Secondi Piatti',
+        'menuPage.category.dolci': 'Dolci',
+        'menuPage.marketPrice': 'Prezzo di Mercato',
+        'menuPage.details.askServerToday': 'Chiedete al vostro cameriere la selezione di oggi',
+        'menuPage.details.forTwoOrMore': 'Per due o più persone',
+        'menuPage.details.minimumTwo': 'Minimo due persone',
+        'menuPage.price.perPerson': 'a persona',
+
+        // Menu Page — dish descriptions (titles stay Italian in HTML)
+        'menuPage.item.oystersDaily.desc': 'Ostriche fresche dalle acque della Costa Est e Ovest, servite su ghiaccio con accompagnamenti tradizionali',
+        'menuPage.item.crudoTrio.desc': 'Tonno, salmone e pesce di stagione con agrumi, olio d\'oliva e sale marino',
+        'menuPage.item.seafoodTower.desc': 'Aragosta, granchio, gamberi, ostriche e vongole serviti su ghiaccio',
+        'menuPage.item.scallops.desc': 'Capesante di fondale con purè di cavolfiore e pancetta',
+        'menuPage.item.tunaTartare.desc': 'Tonno pinna gialla con avocado, cetriolo e sesamo',
+        'menuPage.item.lobsterBisque.desc': 'Ricca e cremosa con cognac ed erbe fresche',
+        'menuPage.item.seaBass.desc': 'Branzino intero arrosto con limone, erbe aromatiche e olio d\'oliva',
+        'menuPage.item.atlanticLobster.desc': 'Cotta nel burro con verdure di stagione e salsa allo zafferano',
+        'menuPage.item.swordfish.desc': 'Con salsa mediterranea e verdure arrosto',
+        'menuPage.item.paella.desc': 'Riso tradizionale spagnolo con aragosta, cozze, vongole e gamberi',
+        'menuPage.item.catchOfDay.desc': 'Pesce fresco preparato secondo le vostre preferenze',
+        'menuPage.item.lemonTart.desc': 'Crostata classica con frutti di bosco freschi e panna montata',
+        'menuPage.item.chocolateMousse.desc': 'Mousse al cioccolato fondente con caramello salato',
+        'menuPage.item.sorbet.desc': 'Chiedete al vostro cameriere i gusti di oggi',
         
         // Locations Section
         'locations.title': 'Le Nostre Sedi',
@@ -173,6 +203,36 @@ const translations = {
         'menu.oysters': 'Fresh Oysters',
         'menu.oystersDesc': 'Daily selection from coastal waters, served on ice',
         'menu.viewFull': 'View Full Menu',
+
+        // Menu Page
+        'menuPage.metaDescription': 'Explore our menu featuring daily fresh catch, seasonal specialties, and sustainably sourced ingredients.',
+        'menuPage.heroTitle': 'Our Menu',
+        'menuPage.heroSubtitle': 'Daily fresh catch and seasonal specialties, crafted with care',
+        'menuPage.category.crudo': 'Raw Bar',
+        'menuPage.category.antipasti': 'Starters',
+        'menuPage.category.secondi': 'Mains',
+        'menuPage.category.dolci': 'Desserts',
+        'menuPage.marketPrice': 'Market price',
+        'menuPage.details.askServerToday': 'Ask your server for today\'s selection',
+        'menuPage.details.forTwoOrMore': 'For two or more',
+        'menuPage.details.minimumTwo': 'Minimum two people',
+        'menuPage.price.perPerson': 'per person',
+
+        // Menu Page — dish descriptions (titles stay Italian in HTML)
+        'menuPage.item.oystersDaily.desc': 'Fresh oysters from the East and West coasts, served on ice with traditional accompaniments',
+        'menuPage.item.crudoTrio.desc': 'Tuna, salmon, and seasonal fish with citrus, olive oil, and sea salt',
+        'menuPage.item.seafoodTower.desc': 'Lobster, crab, shrimp, oysters, and clams served on ice',
+        'menuPage.item.scallops.desc': 'Seared sea scallops with cauliflower purée and bacon',
+        'menuPage.item.tunaTartare.desc': 'Yellowfin tuna with avocado, cucumber, and sesame',
+        'menuPage.item.lobsterBisque.desc': 'Rich, creamy lobster bisque with cognac and fresh herbs',
+        'menuPage.item.seaBass.desc': 'Whole roasted sea bass with lemon, aromatic herbs, and olive oil',
+        'menuPage.item.atlanticLobster.desc': 'Butter-poached with seasonal vegetables and saffron sauce',
+        'menuPage.item.swordfish.desc': 'Grilled swordfish with Mediterranean sauce and roasted vegetables',
+        'menuPage.item.paella.desc': 'Traditional Spanish rice with lobster, mussels, clams, and prawns',
+        'menuPage.item.catchOfDay.desc': 'Fresh fish of the day, prepared to your liking',
+        'menuPage.item.lemonTart.desc': 'Classic tart with fresh berries and whipped cream',
+        'menuPage.item.chocolateMousse.desc': 'Dark chocolate mousse with salted caramel',
+        'menuPage.item.sorbet.desc': 'Ask your server for today\'s flavors',
         
         // Locations Section
         'locations.title': 'Our Locations',
