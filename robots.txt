@@ -1,0 +1,32 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://oceantable.com/sitemap.xml
+
+# Crawl-delay for polite crawling
+Crawl-delay: 1
+
+# Allow all assets
+Allow: /assets/
+Allow: /pages/
+Allow: /*.css
+Allow: /*.js
+Allow: /*.svg
+Allow: /*.png
+Allow: /*.jpg
+Allow: /*.jpeg
+Allow: /*.webp
+
+# Block sensitive files
+Disallow: /private/
+Disallow: /.git/
+Disallow: /.env
+Disallow: /config/
+Disallow: /logs/
+
+# Block development files
+Disallow: /*.map
+Disallow: /node_modules/
+Disallow: /src/
+Disallow: /dev/
