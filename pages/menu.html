@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Ocean Table</title>
+    <meta name="description" content="Esplora il nostro menu di pesce fresco con pescato giornaliero, specialità mediterranee e ingredienti di provenienza sostenibile.">
+    <meta name="keywords" content="menu pesce, menu pesce fresco, menu ristorante, cucina mediterranea, pescato del giorno">
+    
+    <!-- Favicon and App Icons -->
+    <link rel="icon" type="image/svg+xml" href="../assets/images/favicon.svg">
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/images/apple-touch-icon.svg">
+    <meta name="theme-color" content="#1e3a8a">
+    
+    <!-- Language alternatives -->
+    <link rel="alternate" hreflang="it" href="menu.html">
+    <link rel="alternate" hreflang="en" href="../en/pages/menu.html">
+    <link rel="alternate" hreflang="x-default" href="menu.html">
+    
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .menu-page {
+            padding-top: 100px;
+            min-height: 100vh;
+            background: var(--light-gray);
+        }
+        
+        .menu-hero {
+            background: var(--primary-blue);
+            color: var(--white);
+            text-align: center;
+            padding: 4rem 0;
+        }
+        
+        .menu-hero h1 {
+            font-family: var(--font-serif);
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .menu-section {
+            padding: 3rem 0;
+        }
+        
+        .menu-category {
+            background: var(--white);
+            border-radius: var(--border-radius);
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: var(--shadow);
+        }
+        
+        .category-title {
+            font-family: var(--font-serif);
+            font-size: 2rem;
+            color: var(--primary-blue);
+            margin-bottom: 1.5rem;
+            border-bottom: 2px solid var(--light-gray);
+            padding-bottom: 0.5rem;
+        }
+        
+        .menu-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 2rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid var(--light-gray);
+        }
+        
+        .menu-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+        }
+        
+        .item-info {
+            flex: 1;
+        }
+        
+        .item-name {
+            font-family: var(--font-serif);
+            font-size: 1.25rem;
+            color: var(--primary-blue);
+            margin-bottom: 0.5rem;
+        }
+        
+        .item-description {
+            color: var(--medium-gray);
+            line-height: 1.6;
+            margin-bottom: 0.5rem;
+        }
+        
+        .item-details {
+            font-size: 0.9rem;
+            color: var(--medium-gray);
+            font-style: italic;
+        }
+        
+        .item-price {
+            font-weight: 600;
+            color: var(--primary-blue);
+            font-size: 1.1rem;
+            margin-left: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <a href="../index.html">
+                        <div class="logo-circle">
+                            <i class="fas fa-fish"></i>
+                        </div>
+                    </a>
+                </div>
+
+                <ul class="nav-menu" id="nav-menu">
+                    <li class="nav-item">
+                        <a href="../index.html#il-nostro-pesce" class="nav-link">Il Nostro Pesce</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="menu.html" class="nav-link active">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../index.html#locations" class="nav-link">Le Nostre Sedi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="careers.html" class="nav-link">Lavora Con Noi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="gift-card.html" class="nav-link">Gift Card</a>
+                    </li>
+                </ul>
+
+                <div class="nav-right">
+                    <div class="language-switch">
+                        <!-- Language switcher will be dynamically created -->
+                    </div>
+                    <div class="social-icons">
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                    </div>
+                    <button class="btn btn-outline" data-translate="nav.bookNow">Prenota Ora</button>
+                    <button class="btn btn-primary" data-translate="nav.delivery">Consegna</button>
+                </div>
+
+                <div class="hamburger" id="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Menu Hero -->
+    <section class="menu-hero">
+        <div class="container">
+            <h1>Il Nostro Menu</h1>
+            <p>Pescato fresco e specialità di stagione, preparati con passione</p>
+        </div>
+    </section>
+
+    <!-- Menu Content -->
+    <div class="menu-page">
+        <div class="container">
+            <section class="menu-section">
+                <!-- Crudo Bar -->
+                <div class="menu-category">
+                    <h2 class="category-title">Crudo Bar</h2>
+                    
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3 class="item-name">Selezione Giornaliera di Ostriche</h3>
+                            <p class="item-description">Ostriche fresche dalle acque della Costa Est e Ovest, servite su ghiaccio con accompagnamenti tradizionali</p>
+                            <p class="item-details">Chiedete al vostro cameriere la selezione di oggi</p>
+                        </div>
+                        <div class="item-price">Prezzo di Mercato</div>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3 class="item-name">Trio di Crudo</h3>
+                            <p class="item-description">Tonno, salmone e pesce di stagione con agrumi, olio d'oliva e sale marino</p>
+                        </div>
+                        <div class="item-price">€28</div>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3 class="item-name">Torre di Frutti di Mare</h3>
+                            <p class="item-description">Aragosta, granchio, gamberi, ostriche e vongole serviti su ghiaccio</p>
+                            <p class="item-details">Per due o più persone</p>
+                        </div>
+                        <div class="item-price">€85</div>
+                    </div>
+                </div>
+
+                <!-- Antipasti -->
+                <div class="menu-category">
+                    <h2 class="category-title">Antipasti</h2>
+                    
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3 class="item-name">Capesante in Padella</h3>
+                            <p class="item-description">Capesante di fondale con purè di cavolfiore e pancetta</p>
+                        </div>
+                        <div class="item-price">€24</div>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3 class="item-name">Tartare di Tonno</h3>
+                            <p class="item-description">Tonno pinna gialla con avocado, cetriolo e sesamo</p>
+                        </div>
+                        <div class="item-price">€22</div>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3 class="item-name">Bisque di Aragosta</h3>
+                            <p class="item-description">Ricca e cremosa con cognac ed erbe fresche</p>
+                        </div>
+                        <div class="item-price">€16</div>
+                    </div>
+                </div>
+
+                <!-- Secondi Piatti -->
+                <div class="menu-category">
+                    <h2 class="category-title">Secondi Piatti</h2>
+                    
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3 class="item-name">Branzino Mediterraneo</h3>
+                            <p class="item-description">Branzino intero arrosto con limone, erbe aromatiche e olio d'oliva</p>
+                        </div>
+                        <div class="item-price">€42</div>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3 class="item-name">Aragosta Atlantica</h3>
+                            <p class="item-description">Cotta nel burro con verdure di stagione e salsa allo zafferano</p>
+                        </div>
+                        <div class="item-price">€58</div>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3 class="item-name">Pesce Spada alla Griglia</h3>
+                            <p class="item-description">Con salsa mediterranea e verdure arrosto</p>
+                        </div>
+                        <div class="item-price">€38</div>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3 class="item-name">Paella di Mare</h3>
+                            <p class="item-description">Riso tradizionale spagnolo con aragosta, cozze, vongole e gamberi</p>
+                            <p class="item-details">Minimo due persone</p>
+                        </div>
+                        <div class="item-price">€32 a persona</div>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3 class="item-name">Pescato del Giorno</h3>
+                            <p class="item-description">Pesce fresco preparato secondo le vostre preferenze</p>
+                            <p class="item-details">Chiedete al vostro cameriere la selezione di oggi</p>
+                        </div>
+                        <div class="item-price">Prezzo di Mercato</div>
+                    </div>
+                </div>
+
+                <!-- Dolci -->
+                <div class="menu-category">
+                    <h2 class="category-title">Dolci</h2>
+                    
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3 class="item-name">Crostata al Limone</h3>
+                            <p class="item-description">Crostata classica con frutti di bosco freschi e panna montata</p>
+                        </div>
+                        <div class="item-price">€12</div>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3 class="item-name">Mousse al Cioccolato</h3>
+                            <p class="item-description">Mousse al cioccolato fondente con caramello salato</p>
+                        </div>
+                        <div class="item-price">€14</div>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3 class="item-name">Sorbetto di Stagione</h3>
+                            <p class="item-description">Chiedete al vostro cameriere i gusti di oggi</p>
+                        </div>
+                        <div class="item-price">€8</div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <div class="logo-circle">
+                            <i class="fas fa-fish"></i>
+                        </div>
+                        <span class="footer-brand">Ocean Table</span>
+                    </div>
+                    <p class="footer-tagline">Pesce fresco, preparato con maestria</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">Navigazione</h4>
+                    <ul class="footer-links">
+                        <li><a href="../index.html#il-nostro-pesce">Il Nostro Pesce</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="../index.html#locations">Le Nostre Sedi</a></li>
+                        <li><a href="careers.html">Carriere</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">Contatti</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-phone"></i> +39 055 123 4567</p>
+                        <p><i class="fas fa-envelope"></i> info@oceantable.it</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Via del Porto 123</p>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">Seguici</h4>
+                    <div class="footer-social">
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Ocean Table. Tutti i diritti riservati.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../assets/js/translations.js"></script>
+    <script src="../assets/js/script.js"></script>
+</body>
+</html>
