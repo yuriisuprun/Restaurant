@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 192" width="192" height="192">
+  <defs>
+    <style>
+      .fish-body { fill: #1e3a8a; }
+      .fish-accent { fill: #3b82f6; }
+      .fish-eye { fill: #ffffff; }
+      .wave { fill: #0891b2; opacity: 0.15; }
+      .bg { fill: #ffffff; }
+    </style>
+  </defs>
+  
+  <!-- Background -->
+  <rect class="bg" width="192" height="192" rx="20"/>
+  
+  <!-- Main circle background -->
+  <circle cx="96" cy="96" r="80" fill="#1e3a8a"/>
+  
+  <!-- Wave elements -->
+  <path class="wave" d="M16 130 Q40 110 64 130 T112 130 T160 130 T192 130 L192 192 L16 192 Z"/>
+  <path class="wave" d="M16 150 Q40 130 64 150 T112 150 T160 150 T192 150 L192 192 L16 192 Z"/>
+  <path class="wave" d="M16 170 Q40 150 64 170 T112 170 T160 170 T192 170 L192 192 L16 192 Z"/>
+  
+  <!-- Fish body -->
+  <ellipse class="fish-body" cx="96" cy="85" rx="40" ry="20" transform="rotate(-3 96 85)"/>
+  
+  <!-- Fish tail -->
+  <path class="fish-body" d="M48 85 L25 68 L35 85 L25 102 Z"/>
+  
+  <!-- Fish fins -->
+  <ellipse class="fish-accent" cx="78" cy="115" rx="10" ry="5" transform="rotate(-3 78 115)"/>
+  <ellipse class="fish-accent" cx="68" cy="55" rx="8" ry="4" transform="rotate(-3 68 55)"/>
+  
+  <!-- Fish eye -->
+  <circle class="fish-eye" cx="120" cy="75" r="7"/>
+  <circle class="fish-body" cx="122" cy="72" r="2.5"/>
+  
+  <!-- Additional details -->
+  <path class="fish-accent" d="M70 85 Q96 78 122 85" stroke="#3b82f6" stroke-width="2.5" fill="none"/>
+  <path class="fish-accent" d="M75 92 Q96 88 117 92" stroke="#3b82f6" stroke-width="2" fill="none"/>
+  <path class="fish-accent" d="M80 98 Q96 95 112 98" stroke="#3b82f6" stroke-width="1.5" fill="none"/>
+</svg>

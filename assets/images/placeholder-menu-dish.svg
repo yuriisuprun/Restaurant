@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 300" width="500" height="300">
+  <defs>
+    <style>
+      .bg { fill: #f8fafc; }
+      .border { fill: none; stroke: #e2e8f0; stroke-width: 2; stroke-dasharray: 5,5; }
+      .icon { fill: #64748b; }
+      .text { fill: #64748b; font-family: 'Inter', sans-serif; font-size: 14px; text-anchor: middle; }
+      .title { fill: #1e3a8a; font-family: 'Playfair Display', serif; font-size: 18px; font-weight: 600; text-anchor: middle; }
+    </style>
+  </defs>
+  
+  <!-- Background -->
+  <rect class="bg" width="500" height="300" rx="8"/>
+  <rect class="border" x="10" y="10" width="480" height="280" rx="8"/>
+  
+  <!-- Plate icon -->
+  <circle class="icon" cx="250" cy="120" r="40" fill="#e2e8f0"/>
+  <circle class="icon" cx="250" cy="120" r="30" fill="none" stroke="#64748b" stroke-width="2"/>
+  
+  <!-- Utensils -->
+  <path class="icon" d="M220 140 L220 160 M225 140 L225 160 M230 140 L230 160" stroke="#64748b" stroke-width="2"/>
+  <path class="icon" d="M270 140 Q275 145 270 150 Q275 155 270 160" stroke="#64748b" stroke-width="2" fill="none"/>
+  
+  <!-- Text -->
+  <text class="title" x="250" y="200">Menu Item Placeholder</text>
+  <text class="text" x="250" y="220">Delicious seafood dish image</text>
+  <text class="text" x="250" y="240">will be displayed here</text>
+</svg>

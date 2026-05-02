@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <style>
+      .fish-body { fill: #1e3a8a; }
+      .fish-accent { fill: #3b82f6; }
+      .fish-light { fill: #60a5fa; }
+      .fish-eye { fill: #ffffff; }
+      .wave { fill: #0891b2; opacity: 0.12; }
+      .bg { fill: #ffffff; }
+    </style>
+  </defs>
+  
+  <!-- Background -->
+  <rect class="bg" width="512" height="512" rx="50"/>
+  
+  <!-- Main circle background -->
+  <circle cx="256" cy="256" r="220" fill="#1e3a8a"/>
+  
+  <!-- Wave elements -->
+  <path class="wave" d="M36 350 Q100 300 164 350 T292 350 T420 350 T512 350 L512 512 L36 512 Z"/>
+  <path class="wave" d="M36 390 Q100 340 164 390 T292 390 T420 390 T512 390 L512 512 L36 512 Z"/>
+  <path class="wave" d="M36 430 Q100 380 164 430 T292 430 T420 430 T512 430 L512 512 L36 512 Z"/>
+  <path class="wave" d="M36 470 Q100 420 164 470 T292 470 T420 470 T512 470 L512 512 L36 512 Z"/>
+  
+  <!-- Fish body -->
+  <ellipse class="fish-body" cx="256" cy="230" rx="110" ry="55" transform="rotate(-2 256 230)"/>
+  
+  <!-- Fish tail -->
+  <path class="fish-body" d="M130 230 L70 190 L95 230 L70 270 Z"/>
+  
+  <!-- Fish fins -->
+  <ellipse class="fish-accent" cx="210" cy="310" rx="25" ry="12" transform="rotate(-2 210 310)"/>
+  <ellipse class="fish-accent" cx="185" cy="150" rx="20" ry="10" transform="rotate(-2 185 150)"/>
+  
+  <!-- Fish eye -->
+  <circle class="fish-eye" cx="320" cy="200" r="18"/>
+  <circle class="fish-body" cx="325" cy="195" r="6"/>
+  
+  <!-- Additional details -->
+  <path class="fish-accent" d="M190 230 Q256 215 322 230" stroke="#3b82f6" stroke-width="6" fill="none"/>
+  <path class="fish-accent" d="M200 250 Q256 240 312 250" stroke="#3b82f6" stroke-width="5" fill="none"/>
+  <path class="fish-accent" d="M210 270 Q256 262 302 270" stroke="#3b82f6" stroke-width="4" fill="none"/>
+  
+  <!-- Light accents -->
+  <ellipse class="fish-light" cx="280" cy="210" rx="15" ry="8" transform="rotate(-2 280 210)"/>
+  <ellipse class="fish-light" cx="240" cy="200" rx="12" ry="6" transform="rotate(-2 240 200)"/>
+  
+  <!-- Bubbles -->
+  <circle class="fish-eye" cx="380" cy="150" r="4" opacity="0.6"/>
+  <circle class="fish-eye" cx="390" cy="130" r="3" opacity="0.5"/>
+  <circle class="fish-eye" cx="400" cy="110" r="2" opacity="0.4"/>
+</svg>

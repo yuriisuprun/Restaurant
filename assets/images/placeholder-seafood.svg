@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400">
+  <defs>
+    <style>
+      .bg { fill: #f8fafc; }
+      .border { fill: none; stroke: #e2e8f0; stroke-width: 2; stroke-dasharray: 5,5; }
+      .icon { fill: #64748b; }
+      .text { fill: #64748b; font-family: 'Inter', sans-serif; font-size: 16px; text-anchor: middle; }
+      .title { fill: #1e3a8a; font-family: 'Playfair Display', serif; font-size: 20px; font-weight: 600; text-anchor: middle; }
+      .fish { fill: #1e3a8a; opacity: 0.3; }
+    </style>
+  </defs>
+  
+  <!-- Background -->
+  <rect class="bg" width="800" height="400" rx="12"/>
+  <rect class="border" x="15" y="15" width="770" height="370" rx="12"/>
+  
+  <!-- Fish illustrations -->
+  <g class="fish">
+    <ellipse cx="300" cy="150" rx="40" ry="20" transform="rotate(-10 300 150)"/>
+    <path d="M250 150 L230 140 L240 150 L230 160 Z"/>
+    <circle cx="320" cy="145" r="3" fill="#ffffff"/>
+    
+    <ellipse cx="500" cy="180" rx="35" ry="18" transform="rotate(15 500 180)"/>
+    <path d="M545 180 L565 170 L555 180 L565 190 Z"/>
+    <circle cx="485" cy="175" r="3" fill="#ffffff"/>
+  </g>
+  
+  <!-- Waves -->
+  <path class="icon" d="M100 250 Q150 240 200 250 T300 250 T400 250 T500 250 T600 250 T700 250" 
+        stroke="#0891b2" stroke-width="2" fill="none" opacity="0.5"/>
+  <path class="icon" d="M100 270 Q150 260 200 270 T300 270 T400 270 T500 270 T600 270 T700 270" 
+        stroke="#0891b2" stroke-width="2" fill="none" opacity="0.3"/>
+  
+  <!-- Text -->
+  <text class="title" x="400" y="320">Fresh Seafood Display</text>
+  <text class="text" x="400" y="345">Beautiful seafood photography</text>
+  <text class="text" x="400" y="365">will be displayed here</text>
+</svg>

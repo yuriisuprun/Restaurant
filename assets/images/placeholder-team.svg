@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400">
+  <defs>
+    <style>
+      .bg { fill: #f8fafc; }
+      .border { fill: none; stroke: #e2e8f0; stroke-width: 2; stroke-dasharray: 5,5; }
+      .icon { fill: #64748b; }
+      .text { fill: #64748b; font-family: 'Inter', sans-serif; font-size: 16px; text-anchor: middle; }
+      .title { fill: #1e3a8a; font-family: 'Playfair Display', serif; font-size: 20px; font-weight: 600; text-anchor: middle; }
+    </style>
+  </defs>
+  
+  <!-- Background -->
+  <rect class="bg" width="800" height="400" rx="12"/>
+  <rect class="border" x="15" y="15" width="770" height="370" rx="12"/>
+  
+  <!-- Team figures -->
+  <g class="icon">
+    <!-- Person 1 -->
+    <circle cx="300" cy="150" r="25" fill="#e2e8f0"/>
+    <rect x="285" y="175" width="30" height="40" fill="#e2e8f0"/>
+    
+    <!-- Person 2 -->
+    <circle cx="400" cy="150" r="25" fill="#e2e8f0"/>
+    <rect x="385" y="175" width="30" height="40" fill="#e2e8f0"/>
+    
+    <!-- Person 3 -->
+    <circle cx="500" cy="150" r="25" fill="#e2e8f0"/>
+    <rect x="485" y="175" width="30" height="40" fill="#e2e8f0"/>
+  </g>
+  
+  <!-- Chef hats -->
+  <g class="icon" fill="#64748b">
+    <path d="M285 135 Q300 125 315 135 L315 145 L285 145 Z"/>
+    <path d="M385 135 Q400 125 415 135 L415 145 L385 145 Z"/>
+    <path d="M485 135 Q500 125 515 135 L515 145 L485 145 Z"/>
+  </g>
+  
+  <!-- Text -->
+  <text class="title" x="400" y="280">Our Team</text>
+  <text class="text" x="400" y="310">Professional team photo</text>
+  <text class="text" x="400" y="335">will be displayed here</text>
+</svg>
