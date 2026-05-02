@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo Traduzione - Tavolo dell'Oceano</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        .demo-container {
+            max-width: 800px;
+            margin: 100px auto;
+            padding: 2rem;
+            background: var(--white);
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+        }
+        
+        .demo-title {
+            font-family: var(--font-serif);
+            font-size: 2.5rem;
+            color: var(--primary-blue);
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        
+        .language-demo {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        
+        .demo-content {
+            display: grid;
+            gap: 1.5rem;
+        }
+        
+        .demo-item {
+            padding: 1rem;
+            background: var(--light-gray);
+            border-radius: 8px;
+            border-left: 4px solid var(--primary-blue);
+        }
+        
+        .demo-label {
+            font-weight: 600;
+            color: var(--primary-blue);
+            margin-bottom: 0.5rem;
+        }
+        
+        .current-year {
+            font-weight: 600;
+            color: var(--primary-blue);
+        }
+    </style>
+</head>
+<body>
+    <div class="demo-container">
+        <h1 class="demo-title" data-translate="hero.title">Dal Mercato alla Cucina</h1>
+        
+        <div class="language-demo">
+            <p><strong>Nuovo Selettore Lingua Migliorato:</strong></p>
+            <p style="margin-bottom: 1rem; color: var(--medium-gray); font-size: 0.9rem;">
+                Clicca su IT o EN per cambiare lingua con animazioni fluide
+            </p>
+            <div class="language-switch" style="margin: 1rem auto; width: fit-content;">
+                <!-- Language switcher will be dynamically created -->
+            </div>
+            <p style="margin-top: 1rem; font-size: 0.9rem; color: var(--medium-gray);">
+                ✨ Con bandiere, animazioni e transizioni fluide
+            </p>
+        </div>
+        
+        <div class="demo-content">
+            <div class="demo-item">
+                <div class="demo-label">Navigazione:</div>
+                <p data-translate="nav.ourFish">Il Nostro Pesce</p>
+                <p data-translate="nav.menu">Menu</p>
+                <p data-translate="nav.locations">Le Nostre Sedi</p>
+            </div>
+            
+            <div class="demo-item">
+                <div class="demo-label">Descrizione:</div>
+                <p data-translate="about.description1">
+                    Al Tavolo dell'Oceano, crediamo nell'essenza pura del mare. Il nostro impegno per la freschezza inizia all'alba, 
+                    quando selezioniamo il miglior pescato dai pescatori locali e fornitori di fiducia.
+                </p>
+            </div>
+            
+            <div class="demo-item">
+                <div class="demo-label">Menu:</div>
+                <p data-translate="menu.seaBass">Branzino Mediterraneo</p>
+                <p data-translate="menu.seaBassDesc">Grigliato alla perfezione con erbe, limone e olio d'oliva</p>
+            </div>
+            
+            <div class="demo-item">
+                <div class="demo-label">Pulsanti:</div>
+                <button class="btn btn-primary" data-translate="nav.bookNow" style="margin-right: 1rem;">Prenota Ora</button>
+                <button class="btn btn-outline" data-translate="nav.delivery">Consegna</button>
+            </div>
+            
+            <div class="demo-item">
+                <div class="demo-label">Copyright Dinamico:</div>
+                <p class="dynamic-copyright">&copy; 2024 Tavolo dell'Oceano. Tutti i diritti riservati.</p>
+                <p>Anno corrente: <span class="current-year">2024</span></p>
+            </div>
+        </div>
+        
+        <div style="text-align: center; margin-top: 2rem;">
+            <a href="index.html" class="btn btn-primary">Torna al Sito Principale</a>
+        </div>
+    </div>
+    
+    <script src="assets/js/translations.js"></script>
+    <script>
+        // Update current year display
+        document.addEventListener('DOMContentLoaded', function() {
+            const currentYear = new Date().getFullYear();
+            document.querySelector('.current-year').textContent = currentYear;
+        });
+    </script>
+</body>
+</html>
