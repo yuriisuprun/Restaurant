@@ -50,19 +50,6 @@
           "type": "image/svg+xml"
         }
       ]
-    },
-    {
-      "name": "Carte Regalo",
-      "short_name": "Regali",
-      "description": "Acquista carte regalo",
-      "url": "/pages/gift-card.html",
-      "icons": [
-        {
-          "src": "assets/images/favicon.svg",
-          "sizes": "32x32",
-          "type": "image/svg+xml"
-        }
-      ]
     }
   ]
 }

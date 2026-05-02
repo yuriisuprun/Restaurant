@@ -39,17 +39,12 @@ A modern, responsive restaurant website UI inspired by premium seafood dining ex
    - Application process information
    - Team culture highlights
 
-4. **Gift Cards** (`pages/gift-card.html`)
-   - Multiple gift card amounts
-   - Interactive purchase form
-   - Delivery method selection
-   - Terms and conditions
+4.
 
 ### Interactive Elements
 - **Smooth scroll navigation** between sections
 - **Mobile-responsive hamburger menu**
 - **Hover effects** on cards and buttons
-- **Form interactions** on gift card page
 - **Button click handlers** with placeholder functionality
 - **Parallax effects** on hero section
 
@@ -74,7 +69,6 @@ Restaurant/
 ├── pages/
 │   ├── menu.html             # Full menu page
 │   ├── careers.html          # Careers/jobs page
-│   └── gift-card.html        # Gift card purchase page
 └── README.md                 # This file
 ```
 
@@ -113,7 +107,7 @@ Restaurant/
 ### Components
 - **Buttons**: Primary, outline, and large variants
 - **Cards**: Menu items, locations, team members
-- **Forms**: Contact, gift card purchase, applications
+- **Forms**: Contact, applications
 - **Navigation**: Desktop and mobile responsive
 
 ## 📱 Responsive Design
@@ -171,7 +165,6 @@ npx serve .
 - **Complete menu presentation**
 - **Location information** and contact details
 - **Career opportunities** section
-- **Gift card sales** functionality
 - **Social media integration** placeholders
 
 ## 🔧 Customization
@@ -197,7 +190,6 @@ Update CSS custom properties in `:root` to change the color scheme:
 ### Functionality
 - Connect forms to actual backend services
 - Integrate with reservation systems
-- Add payment processing for gift cards
 - Connect social media links
 
 ## 📄 License

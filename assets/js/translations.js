@@ -8,7 +8,6 @@ const translations = {
         'nav.menu': 'Menu',
         'nav.locations': 'Le Nostre Sedi',
         'nav.workWithUs': 'Lavora Con Noi',
-        'nav.giftCard': 'Carta Regalo',
         'nav.bookNow': 'Prenota Ora',
         'nav.delivery': 'Consegna',
         
@@ -151,7 +150,6 @@ const translations = {
         'nav.menu': 'Menu',
         'nav.locations': 'Our Locations',
         'nav.workWithUs': 'Work With Us',
-        'nav.giftCard': 'Gift Card',
         'nav.bookNow': 'Book Now',
         'nav.delivery': 'Delivery',
         
@@ -479,8 +477,6 @@ class LanguageManager {
             document.title = this.currentLanguage === 'it' ? 'Menu - Tavolo dell\'Oceano' : 'Menu - Ocean Table';
         } else if (currentPage.includes('careers')) {
             document.title = this.currentLanguage === 'it' ? 'Carriere - Tavolo dell\'Oceano' : 'Careers - Ocean Table';
-        } else if (currentPage.includes('gift-card')) {
-            document.title = this.currentLanguage === 'it' ? 'Carte Regalo - Tavolo dell\'Oceano' : 'Gift Cards - Ocean Table';
         } else {
             document.title = this.currentLanguage === 'it' ? 'Tavolo dell\'Oceano - Ristorante di Pesce Premium' : 'Ocean Table - Premium Seafood Restaurant';
         }
