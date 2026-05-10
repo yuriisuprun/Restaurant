@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
     initSmoothScrolling();
     initAnimations();
     initMobileMenu();
+    initWhatsAppButton();
     
     // Initialize language system after a short delay to ensure translations.js is loaded
     setTimeout(() => {
@@ -222,6 +223,48 @@ function initMobileMenu() {
             navMenu.classList.remove('active');
         }
     });
+}
+
+// WhatsApp Button functionality
+function initWhatsAppButton() {
+    const whatsappButton = document.getElementById('whatsapp-button');
+    
+    if (!whatsappButton) return;
+    
+    // Restaurant phone number (replace with actual WhatsApp number)
+    // Format: country code + number without spaces or special characters
+    // const restaurantPhoneNumber = '393512345678'; // Example: +39 351 234 5678
+    const restaurantPhoneNumber = '380984211558';
+
+    // Default message
+    const defaultMessage = 'Ciao! Vorrei informazioni sul vostro ristorante.'; // Italian
+    
+    // Handle WhatsApp button click
+    whatsappButton.addEventListener('click', function(e) {
+        e.preventDefault();
+        
+        // Create WhatsApp URL
+        const whatsappURL = `https://wa.me/${restaurantPhoneNumber}?text=${encodeURIComponent(defaultMessage)}`;
+        
+        // Open WhatsApp in new tab
+        window.open(whatsappURL, '_blank');
+        
+        // Track analytics if available
+        if (window.gtag) {
+            gtag('event', 'whatsapp_click', {
+                'event_category': 'engagement',
+                'event_label': 'WhatsApp Button'
+            });
+        }
+    });
+    
+    // Add pulse animation on first load (optional)
+    // Uncomment to enable pulse animation
+    // whatsappButton.classList.add('pulse');
+    // Remove pulse after 5 seconds
+    // setTimeout(() => {
+    //     whatsappButton.classList.remove('pulse');
+    // }, 5000);
 }
 
 // Button interactions
