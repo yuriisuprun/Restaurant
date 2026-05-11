@@ -267,19 +267,11 @@ body {
     transform: translateX(100%);
 }
 
-/* Language indicator with flag emojis */
+/* Language indicator */
 .language-option::before {
     content: '';
-    margin-right: 4px;
+    margin-right: 0;
     font-size: 0.9rem;
-}
-
-.language-option[data-lang="it"]::before {
-    content: '🇮🇹';
-}
-
-.language-option[data-lang="en"]::before {
-    content: '🇬🇧';
 }
 
 /* Mobile language switcher */
